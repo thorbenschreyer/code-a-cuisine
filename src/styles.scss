@@ -2,11 +2,16 @@
                 General
 ########################################## */
 
-body {
+body, h1, h2 {
     font-family: 'Qicksand-Regular';
     margin: 0px;
     padding: 0px;
     overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
 }
 
 
@@ -16,49 +21,67 @@ body {
 
 @font-face {
     font-family: 'Quicksand-Regular';
-    src: url(/public/assets/Font/Quicksand-Regular.ttf);
+    src: url(/assets/Font/Quicksand-Regular.ttf);
 }
 
 @font-face {
     font-family: 'Quicksand-Light';
-    src: url(/public/assets/Font/Quicksand-Light.ttf);
+    src: url(/assets/Font/Quicksand-Light.ttf);
 }
 
 @font-face {
     font-family: 'Quicksand-Medium';
-    src: url(/public/assets/Font/Quicksand-Medium.ttf);
+    src: url(/assets/Font/Quicksand-Medium.ttf);
 }
 
 @font-face {
     font-family: 'Quicksand-SemiBold';
-    src: url(/public/assets/Font/Quicksand-SemiBold.ttf);
+    src: url(/assets/Font/Quicksand-SemiBold.ttf);
 }
 
 @font-face {
     font-family: 'Quicksand-Bold';
-    src: url(/public/assets/Font/Quicksand-Bold.ttf);
+    src: url(/assets/Font/Quicksand-Bold.ttf);
 }
 
 @font-face {
     font-family: 'Ubuntu-Regular';
-    src: url(/public/assets/Font/Ubuntu-Regular.ttf);
+    src: url(/assets/Font/Ubuntu-Regular.ttf);
 }
 
 @font-face {
     font-family: 'Ubuntu-Medium';
-    src: url(/public/assets/Font/Ubuntu-Medium.ttf);
+    src: url(/assets/Font/Ubuntu-Medium.ttf);
 }
 
 @font-face {
     font-family: 'Ubuntu-Bold';
-    src: url(/public/assets/Font/Ubuntu-Bold.ttf);
+    src: url(/assets/Font/Ubuntu-Bold.ttf);
 }
 
 /* ##########################################
                 BUTTONS
 ########################################## */
 
+.btn {
+    background-color: unset;
+    border: unset;
+    cursor: pointer;
+    padding: 8px 16px;
+    font-family: 'Quicksand-SemiBold';
+    transition: ease-out 300ms;
 
+    &--creme {
+        background-color: rgba(250, 240, 230, 1);
+        color: rgba(0, 128, 0, 1);
+
+        &:hover {
+            font-family: 'Quicksand-Bold';
+            transform: scale(1.03);
+            background-color: rgba(250, 224, 198, 1);
+        }
+    }
+}
 
 
 
@@ -69,7 +92,6 @@ body {
 .main-logo{
     position: absolute;
     top: 32px;
-    left: 32px;
     width: 142px;
     height: 48px;
 }
