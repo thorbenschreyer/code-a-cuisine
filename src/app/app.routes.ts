@@ -5,6 +5,7 @@ import { Preferences } from './components/preferences/preferences';
 import { RecipeView } from './components/recipe-view/recipe-view';
 import { Recipes } from './components/recipes/recipes';
 import { Errorpage } from './components/errorpage/errorpage';
+import { GenerateRecipe } from './components/generate-recipe/generate-recipe';
 
 export const routes: Routes = [
     {path: '', component:LandingPage},
@@ -12,6 +13,7 @@ export const routes: Routes = [
     {path: 'cookbook', component:Cookbook},
     {path: 'recipe-view/:recipeName', component:RecipeView},
     {path: 'recipes/:cuisineTyoe', component:Recipes},
+    {path: 'generate', component:GenerateRecipe},
     
     {path: '**', component:Errorpage}
 ];

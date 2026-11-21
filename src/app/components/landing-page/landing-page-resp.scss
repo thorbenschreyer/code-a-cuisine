@@ -1,7 +1,76 @@
 @media (min-width: 1441px) {
+  .landingpage-image {
+    content: url('/assets/images/landingpage-img-widescreen.svg');
+  }
+}
 
-    .landingpage-image {
-        content: url('/assets/images/landingpage-img-widescreen.svg');
-    }
-    
+@media (max-width: 1200px) {
+  .cook-book-text {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .go-to-cookbook-link {
+    margin-left: -26px;
+  }
+}
+
+@media (max-width: 980px) {
+  .landingpage-main {
+    overflow: hidden;
+  }
+
+  .landingpage-content-container {
+    position: relative;
+  }
+
+  .landingpage-image {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: auto;
+    max-width: none;
+    transform: translateX(60%);
+  }
+
+  .landingpage-h2 {
+    font-size: 32px;
+  }
+
+  .landingpage-h1 {
+    font-size: 72px;
+  }
+}
+
+@media (max-width: 590px) {
+  .landingpage-content {
+    width: 330px;
+  }
+
+  .landingpage-content-container {
+    margin: 0px 8px;
+  }
+
+  .landingpage-h2 {
+    font-size: 20px;
+  }
+
+  .landingpage-h1 {
+    font-size: 40px;
+  }
+
+  .landingpage-content {
+    width: 270px;
+  }
+
+  .cook-book-text {
+    font-size: 20px;
+  }
+
+  .go-to-cookbook-link[_ngcontent-ng-c3027466223] {
+    font-size: 16px;
+    padding: unset;
+    margin: unset;
+  }
 }
