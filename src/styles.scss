@@ -6,6 +6,7 @@ body {
     font-family: 'Qicksand-Regular';
     margin: 0px;
     padding: 0px;
+    overflow: hidden;
 }
 
 
@@ -38,6 +39,37 @@ body {
     src: url(/public/assets/Font/Quicksand-Bold.ttf);
 }
 
+@font-face {
+    font-family: 'Ubuntu-Regular';
+    src: url(/public/assets/Font/Ubuntu-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Ubuntu-Medium';
+    src: url(/public/assets/Font/Ubuntu-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Ubuntu-Bold';
+    src: url(/public/assets/Font/Ubuntu-Bold.ttf);
+}
+
 /* ##########################################
                 BUTTONS
 ########################################## */
+
+
+
+
+
+
+/* ##########################################
+                Logo
+########################################## */
+.main-logo{
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    width: 142px;
+    height: 48px;
+}
