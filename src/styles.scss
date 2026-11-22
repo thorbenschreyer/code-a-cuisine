@@ -14,6 +14,22 @@ a {
     color: unset;
 }
 
+.main-page-green {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  color: rgba(250, 240, 230, 1);
+  background-color: rgba(57, 96, 57, 1);
+}
+
+.main-page-white {
+  height: 100vh;
+  width: 100vw;
+  color: rgba(16, 49, 11, 1);
+  background-color: rgba(255, 255, 255, 1)
+}
+
 
 /* ##########################################
                 FONTS
@@ -89,18 +105,3 @@ a {
 /* ##########################################
                 Logo
 ########################################## */
-.main-logo{
-    position: absolute;
-    top: 32px;
-    width: 142px;
-    height: 48px;
-}
-
-@media (max-width: 590px) {
-.main-logo{
-    position: absolute;
-    top: 8px;
-    width: 95px;
-    height: auto;
-}
-}
