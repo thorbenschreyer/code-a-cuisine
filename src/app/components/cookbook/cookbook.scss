@@ -22,34 +22,54 @@
 }
 
 .liekd-recipes-content {
-
+  display: flex;
+  width: 100%;
+  gap: 32px;
 }
 
 .liekd-recipes-text-area {
-
+  flex: 0 0 25%;
 }
 
 .liekd-recipes-h1 {
-
 }
 
 .liekd-recipes-text {
-
 }
 
 .liked-recipes {
-
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0; // Wichtig!
 }
 
-
 .liked-recipes-p {
-
 }
 
 .liked-recipes-heart-img {
-
 }
 
 .most-liked-recipe {
-    
+  flex: 0 0 280px;
+  scroll-snap-align: start;
+}
+
+.most-liked-recipes-section {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+  min-width: 0;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
