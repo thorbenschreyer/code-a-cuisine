@@ -1,0 +1,114 @@
+// Tablet: 2 Container
+@media (max-width: 1024px) {
+  .cuisine-section-container {
+    flex-basis: calc((100% - 16px) / 2);
+  }
+
+  .liekd-recipes-content {
+    flex-direction: column;
+    gap: unset;
+  }
+
+  .liked-recipes {
+    margin-left: 16px;
+  }
+
+  .liekd-recipes-text {
+    margin-bottom: unset;
+  }
+}
+
+// Mobile: 1 Container
+@media (max-width: 600px) {
+  .cuisine-section-container {
+    flex-basis: 100%;
+  }
+
+  .display-none {
+    display: none;
+  }
+
+  .main-logo {
+    margin-top: 16px;
+    width: 95px;
+    height: 32px;
+  }
+
+  .back-to-button {
+    margin-top: 12pxpx;
+    margin-bottom: 20px;
+  }
+
+  .liekd-recipes-h1 {
+    font-size: 40px;
+  }
+
+  .liekd-recipes-text {
+    font-size: 18px;
+  }
+
+  .liked-recipes-p {
+    font-size: 20px;
+  }
+
+  .liked-recipes-heart-img {
+    height: 21px;
+  }
+
+  .cuisine-section-img {
+    height: auto;
+  }
+
+  .link-contauner {
+    justify-content: center;
+  }
+
+  .link-contauner {
+    margin: 8px 0px 0px;
+  }
+
+  .cuisine-section {
+    row-gap: 16px;
+  }
+
+  .liekd-recipes-content {
+    margin-bottom: 16px;
+  }
+
+  .most-liked-recipe-name {
+    font-size: 18px;
+  }
+
+  .cookbook-content-container {
+    margin: 0px 8px;
+  }
+
+  .most-liked-recipe-cooking-img {
+    width: 10px;
+    padding: 4px;
+  }
+
+  .most-liked-recipe-name {
+    font-size: 18px;
+    max-width: 190px;
+  }
+
+  .liked-recipes {
+    margin-left: 6px;
+  }
+
+  .like-label {
+    gap: 4px;
+    height: 18px;
+    width: 40px;
+  }
+
+  .like-label-img {
+    width: 15px;
+  }
+
+  .most-liked-recipe[_ngcontent-ng-c2446149590] {
+    flex: 0 0 260px;
+    padding: 8px;
+  }
+}

@@ -5,6 +5,6 @@ import { RouterLink } from '@angular/router';
   selector: 'app-cookbook',
   imports: [RouterLink],
   templateUrl: './cookbook.html',
-  styleUrl: './cookbook.scss',
+  styleUrls: ['./cookbook.scss', './cookbook-resp.scss']
 })
 export class Cookbook {}
