@@ -1,12 +1,13 @@
 .cookbook-content-container {
   margin: 0px 32px;
+  padding-bottom: 32px;
   max-width: 1440px;
 }
 
 @media (min-width: 1441px) {
-.cookbook-content-container {
-  margin: 0px auto;
-}
+  .cookbook-content-container {
+    margin: 0px auto;
+  }
 }
 
 .main-logo {
@@ -181,18 +182,18 @@
 }
 
 .cuisine-section-head {
-    display: flex;
-    align-items: center;
-    color: rgba(30, 85, 21, 1);
-    font-family: 'Quicksand-SemiBold';
-    font-size: 28px;
-    margin: 0px;
-    margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  color: rgba(30, 85, 21, 1);
+  font-family: 'Quicksand-SemiBold';
+  font-size: 28px;
+  margin: 0px;
+  margin-bottom: 8px;
 }
 
 .cuisine-section-icon {
-    margin-left: 8px;
-    transition: transform 0.3s ease;
+  margin-left: 8px;
+  transition: transform 0.3s ease;
 }
 
 .cuisine-section-img {
@@ -203,9 +204,33 @@
 }
 
 .cuisine-section-container:hover .cuisine-section-icon {
-    transform: rotate(15deg);
+  transform: rotate(15deg);
 }
 
 .cuisine-section-container:hover .cuisine-section-img {
-    transform: scale(1.03)
+  transform: scale(1.03);
+}
+
+.link-contauner {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin: 64px 0px 0px;
+}
+
+.go-to-generate-text {
+  font-family: 'Quicksand-Medium';
+  color: rgba(57, 96, 57, 1);
+  padding: 16px 26px;
+  transition: ease-in-out 300ms;
+
+  &:hover {
+    background-color: rgba(57, 96, 57, 0.1)
+  }
+}
+
+.go-to-generate-image {
+  width: 24px;
+  height: auto;
+  margin-left: 8px;
 }
