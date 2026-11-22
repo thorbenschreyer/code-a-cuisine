@@ -1,5 +1,12 @@
 .cookbook-content-container {
   margin: 0px 32px;
+  max-width: 1440px;
+}
+
+@media (min-width: 1441px) {
+.cookbook-content-container {
+  margin: 0px auto;
+}
 }
 
 .main-logo {
@@ -12,6 +19,7 @@
   display: flex;
   align-items: center;
   margin-top: 24px;
+  margin-bottom: 40px;
   cursor: pointer;
 }
 
@@ -25,44 +33,69 @@
   display: flex;
   width: 100%;
   gap: 32px;
+  background-color: rgba(57, 96, 57, 0.04);
+  border-radius: 25px;
+  margin-bottom: 64px;
 }
 
 .liekd-recipes-text-area {
-  flex: 0 0 25%;
+  flex: 0 0 35%;
+  margin-left: 16px;
 }
 
 .liekd-recipes-h1 {
+  color: rgba(30, 85, 21, 1);
+  font-family: 'Quicksand-Bold';
+  font-weight: 700;
+  font-size: 64px;
 }
 
 .liekd-recipes-text {
+  color: rgba(16, 49, 11, 1);
+  font-family: 'Quicksand-Medium';
+  font-size: 24px;
+  font-weight: 500;
 }
 
 .liked-recipes {
   display: flex;
   flex-direction: column;
+  justify-content: end;
+  margin-bottom: 16px;
   flex: 1;
-  min-width: 0; // Wichtig!
+  min-width: 0;
 }
 
 .liked-recipes-p {
+  display: flex;
+  align-items: center;
+  color: rgba(30, 85, 21, 1);
+  font-family: 'Quicksand-SemiBold';
+  font-size: 24px;
 }
 
 .liked-recipes-heart-img {
+  margin-left: 8px;
+  height: 28px;
+  width: auto;
 }
 
 .most-liked-recipe {
-  flex: 0 0 280px;
+  display: flex;
+  flex: 0 0 320px;
   scroll-snap-align: start;
+  background-color: rgba(219, 224, 219, 0.7);
+  border-radius: 16px;
+  padding: 12px;
 }
 
 .most-liked-recipes-section {
   display: flex;
   gap: 24px;
-  width: 100%;
+  width: 98%;
   min-width: 0;
 
   overflow-x: auto;
-  overflow-y: hidden;
 
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
@@ -71,5 +104,75 @@
 
   &::-webkit-scrollbar {
     display: none;
+  }
+}
+
+.most-liked-recipe-cooking-img {
+  width: 16px;
+  padding: 8px;
+}
+
+.most-liked-recipe-cooking-time {
+  display: flex;
+  align-items: center;
+  color: rgba(57, 96, 57, 1);
+  font-family: 'Quicksand-Medium';
+  font-size: 16px;
+  margin: 0px;
+}
+
+.most-liked-recipe-name {
+  color: rgba(57, 96, 57, 1);
+  font-family: 'Quicksand-Medium';
+  font-size: 24px;
+  padding: 8px;
+  margin: 0px;
+}
+
+.like-label {
+  display: flex;
+  align-items: center;
+  padding: 4px 8px;
+  gap: 8px;
+  color: rgba(16, 49, 11, 1);
+  background-color: rgba(57, 96, 57, 0.3);
+  border-radius: 30px;
+  height: 26px;
+  width: 64px;
+  margin: 0px;
+  font-family: 'Quicksand-Medium';
+}
+
+.like-label-img {
+  width: 20px;
+  height: auto;
+}
+
+.cuisine-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  width: 100%;
+}
+
+.cuisine-section-container {
+  flex: 1 1 calc((100% - 32px) / 3);
+  height: 440px;
+  min-width: 0;
+  background-color: red;
+  box-sizing: border-box;
+}
+
+// Tablet: 2 Container
+@media (max-width: 1024px) {
+  .cuisine-section-container {
+    flex-basis: calc((100% - 16px) / 2);
+  }
+}
+
+// Mobile: 1 Container
+@media (max-width: 600px) {
+  .cuisine-section-container {
+    flex-basis: 100%;
   }
 }

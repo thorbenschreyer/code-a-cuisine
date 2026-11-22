@@ -18,57 +18,94 @@
             <section class="most-liked-recipes-section">
                 <!-- TODO: Add forschleife mit den 5 Rezepten mit den meisten Likes (Funktion filtert diese und stellt sie zur Verfügung) -->
                 <!--  ##### Recipe 1 ####  -->
-                <article  class="most-liked-recipe">
-                    <div>
-                        <p><img src="/assets/images/clock-green.svg" alt="clock">Cooking time: 20min</p>
-                        <p>Pasta with spinach and cherry tomatoes</p>
+                <article routerLink="" class="most-liked-recipe">
+                    <div class="most-liked-recipe-content">
+                        <p class="most-liked-recipe-cooking-time"><img class="most-liked-recipe-cooking-img" src="/assets/images/clock-green.svg" alt="clock">Cooking time: 20min</p>
+                        <p  class="most-liked-recipe-name">Pasta with spinach and cherry tomatoes</p>
                     </div>
-                    <p><img src="/assets/images/heart-darkgreen.svg" alt="heart-dark-green">66</p>
+                    <p class="like-label"><img class="like-label-img"  src="/assets/images/heart-darkgreen.svg" alt="heart-dark-green">66</p>
                 </article>
 
                 <!--  ##### Recipe 2 ####  -->
-                <article  class="most-liked-recipe">
-                    <div>
-                        <p><img src="/assets/images/clock-green.svg" alt="clock">Cooking time: 20min</p>
-                        <p>Pasta with spinach and cherry tomatoes</p>
+                <article routerLink="" class="most-liked-recipe">
+                    <div class="most-liked-recipe-content">
+                        <p class="most-liked-recipe-cooking-time"><img class="most-liked-recipe-cooking-img" src="/assets/images/clock-green.svg" alt="clock">Cooking time: 20min</p>
+                        <p  class="most-liked-recipe-name">Pasta with spinach and cherry tomatoes</p>
                     </div>
-                    <p><img src="/assets/images/heart-darkgreen.svg" alt="heart-dark-green">66</p>
+                    <p class="like-label"><img class="like-label-img"  src="/assets/images/heart-darkgreen.svg" alt="heart-dark-green">66</p>
                 </article>
 
                 <!--  ##### Recipe 3 ####  -->
-                <article  class="most-liked-recipe">
-                    <div>
-                        <p><img src="/assets/images/clock-green.svg" alt="clock">Cooking time: 20min</p>
-                        <p>Pasta with spinach and cherry tomatoes</p>
+                 <article routerLink="" class="most-liked-recipe">
+                    <div class="most-liked-recipe-content">
+                        <p class="most-liked-recipe-cooking-time"><img class="most-liked-recipe-cooking-img" src="/assets/images/clock-green.svg" alt="clock">Cooking time: 20min</p>
+                        <p  class="most-liked-recipe-name">Pasta with spinach and cherry tomatoes</p>
                     </div>
-                    <p><img src="/assets/images/heart-darkgreen.svg" alt="heart-dark-green">66</p>
+                    <p class="like-label"><img class="like-label-img"  src="/assets/images/heart-darkgreen.svg" alt="heart-dark-green">66</p>
                 </article>
 
                 <!--  ##### Recipe 4 ####  -->
-                <article  class="most-liked-recipe">
-                    <div>
-                        <p><img src="/assets/images/clock-green.svg" alt="clock">Cooking time: 20min</p>
-                        <p>Pasta with spinach and cherry tomatoes</p>
+                <article routerLink="" class="most-liked-recipe">
+                    <div class="most-liked-recipe-content">
+                        <p class="most-liked-recipe-cooking-time"><img class="most-liked-recipe-cooking-img" src="/assets/images/clock-green.svg" alt="clock">Cooking time: 20min</p>
+                        <p  class="most-liked-recipe-name">Pasta with spinach and cherry tomatoes</p>
                     </div>
-                    <p><img src="/assets/images/heart-darkgreen.svg" alt="heart-dark-green">66</p>
+                    <p class="like-label"><img class="like-label-img"  src="/assets/images/heart-darkgreen.svg" alt="heart-dark-green">66</p>
                 </article>
 
                 <!--  ##### Recipe 5 ####  -->
-                <article  class="most-liked-recipe">
-                    <div>
-                        <p><img src="/assets/images/clock-green.svg" alt="clock">Cooking time: 20min</p>
-                        <p>Pasta with spinach and cherry tomatoes</p>
+                <article routerLink="" class="most-liked-recipe">
+                    <div class="most-liked-recipe-content">
+                        <p class="most-liked-recipe-cooking-time"><img class="most-liked-recipe-cooking-img" src="/assets/images/clock-green.svg" alt="clock">Cooking time: 20min</p>
+                        <p  class="most-liked-recipe-name">Pasta with spinach and cherry tomatoes</p>
                     </div>
-                    <p><img src="/assets/images/heart-darkgreen.svg" alt="heart-dark-green">66</p>
+                    <p class="like-label"><img class="like-label-img"  src="/assets/images/heart-darkgreen.svg" alt="heart-dark-green">66</p>
                 </article>
-
             </section>
-
-
         </div>
     </section>
 
+    <!--  ########################################
+                Cookbooks
+    ########################################  -->
 
+            <section class="cuisine-section">
+                <!--  ##### Recipes Italy ####  -->
+                <div routerLink="recipes/italy" class="cuisine-section-container">
+                    <p class="cuisine-section-head">Italian cuisine<img class="cuisine-section-icon" src="" alt="special icon"></p>
+                    <img class="cuisine-section-img" src="" alt="Image of food">
+                </div>
+
+                <!--  ##### Recipes German ####  -->
+                <div routerLink="recipes/german" class="cuisine-section-container">
+                    <p class="cuisine-section-head">Italian cuisine<img class="cuisine-section-icon" src="" alt="special icon"></p>
+                    <img class="cuisine-section-img" src="" alt="Image of food">
+                </div>
+
+                <!--  ##### Recipes Japan ####  -->
+                <div routerLink="recipes/japan" class="cuisine-section-container">
+                    <p class="cuisine-section-head">Italian cuisine<img class="cuisine-section-icon" src="" alt="special icon"></p>
+                    <img class="cuisine-section-img" src="" alt="Image of food">
+                </div>
+
+                <!--  ##### Recipes Gourmet ####  -->
+                <div routerLink="recipes/gourmet" class="cuisine-section-container">
+                    <p class="cuisine-section-head">Italian cuisine<img class="cuisine-section-icon" src="" alt="special icon"></p>
+                    <img class="cuisine-section-img" src="" alt="Image of food">
+                </div>
+
+                <!--  ##### Recipes India ####  -->
+                <div routerLink="recipes/india" class="cuisine-section-container">
+                    <p class="cuisine-section-head">Italian cuisine<img class="cuisine-section-icon" src="" alt="special icon"></p>
+                    <img class="cuisine-section-img" src="" alt="Image of food">
+                </div>
+
+                <!--  ##### Recipes Fusion ####  -->
+                <div routerLink="recipes/fusion" class="cuisine-section-container">
+                    <p class="cuisine-section-head">Italian cuisine<img class="cuisine-section-icon" src="" alt="special icon"></p>
+                    <img class="cuisine-section-img" src="" alt="Image of food">
+                </div>
+            </section>
 
 
 
