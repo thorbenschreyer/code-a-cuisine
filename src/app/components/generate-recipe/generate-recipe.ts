@@ -4,6 +4,6 @@ import { Component } from '@angular/core';
   selector: 'app-generate-recipe',
   imports: [],
   templateUrl: './generate-recipe.html',
-  styleUrl: './generate-recipe.scss',
+  styleUrls: ['./generate-recipe.scss', './generate-recipe-resp.scss']
 })
 export class GenerateRecipe {}
