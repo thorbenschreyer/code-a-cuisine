@@ -12,7 +12,7 @@ export const routes: Routes = [
     {path: 'preferences', component:Preferences},
     {path: 'cookbook', component:Cookbook},
     {path: 'recipe-view/:recipeName', component:RecipeView},
-    {path: 'recipes/:cuisineTyoe', component:Recipes},
+    {path: 'recipes/:cuisineType', component:Recipes},
     {path: 'generate', component:GenerateRecipe},
     
     {path: '**', component:Errorpage}

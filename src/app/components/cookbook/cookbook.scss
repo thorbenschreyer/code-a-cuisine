@@ -152,6 +152,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
+  row-gap: 32px;
   width: 100%;
 }
 
@@ -159,8 +160,10 @@
   flex: 1 1 calc((100% - 32px) / 3);
   height: 440px;
   min-width: 0;
-  background-color: red;
   box-sizing: border-box;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
 }
 
 // Tablet: 2 Container
@@ -175,4 +178,34 @@
   .cuisine-section-container {
     flex-basis: 100%;
   }
+}
+
+.cuisine-section-head {
+    display: flex;
+    align-items: center;
+    color: rgba(30, 85, 21, 1);
+    font-family: 'Quicksand-SemiBold';
+    font-size: 28px;
+    margin: 0px;
+    margin-bottom: 8px;
+}
+
+.cuisine-section-icon {
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+}
+
+.cuisine-section-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.cuisine-section-container:hover .cuisine-section-icon {
+    transform: rotate(15deg);
+}
+
+.cuisine-section-container:hover .cuisine-section-img {
+    transform: scale(1.03)
 }
